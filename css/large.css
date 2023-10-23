@@ -1,0 +1,35 @@
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  body.page--landing > main {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-between;
+  }
+
+  body.page--landing > main > header {
+    margin-top: 2.5rem;
+  }
+
+  body.page--landing .hero {
+    display: flex;
+    flex-direction: row-reverse;
+
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  body.page--landing .hero aside {
+    margin: 0;
+    flex: 1 1 50%;
+  }
+
+  body.page--landing .hero article {
+    flex: 1 1 50%;
+  }
+
+  body.page--landing .hero article section {
+    max-width: 25rem;
+  }
+}

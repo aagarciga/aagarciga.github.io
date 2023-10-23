@@ -1,0 +1,6 @@
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  body.page--landing .hero {
+    margin: 1rem 0;
+  }
+}
