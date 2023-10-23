@@ -1,0 +1,11 @@
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  body.page--landing > main {
+    width: 85%;
+
+    justify-content: space-between;
+  }
+  body.page--landing .hero footer {
+    margin-top: 3rem;
+  }
+}
