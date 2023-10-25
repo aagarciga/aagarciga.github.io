@@ -154,7 +154,8 @@ body.page--landing > main > header {
   display: flex;
   margin-top: 1.5rem;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  flex-direction: column;
 }
 
 body.page--landing .branding {
@@ -192,6 +193,22 @@ body.page--landing .branding .brand > :first-child {
   font-size: var(--font-size-h4);
 }
 
+body.page--landing > main > header > nav {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+}
+
+body.page--landing > main > header > nav a {
+  color: var(--color-primary);
+}
+body.page--landing > main > header > nav a:link {
+  text-decoration: none;
+}
+body.page--landing > main > header > nav a:hover {
+  color: var(--color-text);
+}
+
 body.page--landing .hero {
   margin: 3rem 0;
   display: flex;
@@ -216,13 +233,15 @@ body.page--landing .hero article h1 {
 }
 
 body.page--landing .hero footer {
-  margin-top: 1.5rem;
+  margin-top: 2.5rem;
 }
 
 body.page--landing > main .socials {
   display: flex;
+  padding: 0;
   list-style: none;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 body.page--landing > main .socials__icon {

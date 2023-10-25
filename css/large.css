@@ -32,4 +32,11 @@
   body.page--landing .hero article section {
     max-width: 25rem;
   }
+  body.page--landing .hero footer {
+    margin-top: 1.5rem;
+  }
+
+  body.page--landing > main .socials {
+    justify-content: left;
+  }
 }
