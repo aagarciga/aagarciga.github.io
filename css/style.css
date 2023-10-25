@@ -216,13 +216,15 @@ body.page--landing .hero article h1 {
 }
 
 body.page--landing .hero footer {
-  margin-top: 1.5rem;
+  margin-top: 2.5rem;
 }
 
 body.page--landing > main .socials {
   display: flex;
+  padding: 0;
   list-style: none;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 body.page--landing > main .socials__icon {
