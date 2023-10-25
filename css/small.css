@@ -1,3 +1,13 @@
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
+  body.page--landing > main > header {
+    display: flex;
+    margin-top: 1.5rem;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  body.page--landing > main > header > nav {
+    margin-top: 1rem;
+  }
 }
