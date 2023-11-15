@@ -5,6 +5,7 @@
     url("../assets/fonts/jost-variablefont_wght-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -13,6 +14,7 @@
     url("../assets/fonts/jetbrainsmonowght-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 :root {
@@ -171,14 +173,18 @@ body.page--landing .branding:hover {
   color: #ff5100;
 }
 
-body.page--landing .branding:hover svg {
-  fill: var(--color-primary);
+body.page--landing .branding:hover img {
+  /* fill: var(--color-primary); */
+  filter: invert(34%) sepia(93%) saturate(2010%) hue-rotate(1deg)
+    brightness(102%) contrast(109%);
 }
 
-body.page--landing .branding > svg {
+body.page--landing .branding > img {
   width: 64px;
   height: 64px;
-  fill: var(--color-text);
+  /* fill: var(--color-text); */
+  filter: invert(20%) sepia(14%) saturate(485%) hue-rotate(152deg)
+    brightness(96%) contrast(97%);
 }
 
 body.page--landing .branding .brand {
@@ -200,13 +206,13 @@ body.page--landing > main > header > nav {
 }
 
 body.page--landing > main > header > nav a {
-  color: var(--color-primary);
+  color: var(--color-text);
 }
 body.page--landing > main > header > nav a:link {
   text-decoration: none;
 }
 body.page--landing > main > header > nav a:hover {
-  color: var(--color-text);
+  color: var(--color-primary);
 }
 
 body.page--landing .hero {
@@ -218,9 +224,15 @@ body.page--landing .hero {
 body.page--landing .hero aside {
 }
 
-body.page--landing .hero aside img {
+body.page--landing .hero aside picture {
   width: 100%;
+  height: auto;
   object-fit: cover;
+}
+
+body.page--landing .hero aside picture img {
+  width: 100%;
+  height: auto;
 }
 
 body.page--landing .hero article {
@@ -309,8 +321,11 @@ body.page--landing
   pointer-events: auto;
 }
 
-body.page--landing > main .socials .socials__icon:hover svg * {
-  fill: var(--color-background);
+/* body.page--landing > main .socials .socials__icon:hover svg * { */
+body.page--landing > main .socials .socials__icon:hover img {
+  /* fill: var(--color-background); */
+  filter: invert(100%) sepia(2%) saturate(11%) hue-rotate(224deg)
+    brightness(113%) contrast(92%);
 }
 
 body.page--landing > main .socials .socials__icon:hover span,
