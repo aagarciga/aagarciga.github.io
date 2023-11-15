@@ -142,7 +142,7 @@ body {
 body.page--landing {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 body.page--landing > main {
