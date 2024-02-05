@@ -337,21 +337,6 @@ body.page--landing
   text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
 }
 
-body.page--landing > main .socials .socials__facebook:hover,
-body.page--landing
-  > main
-  .socials
-  .socials__facebook:hover
-  .socials__icon__tooltip,
-body.page--landing
-  > main
-  .socials
-  .socials__facebook:hover
-  .socials__icon__tooltip::before {
-  background: #1877f2;
-  color: #fff;
-}
-
 body.page--landing > main .socials .socials__github:hover,
 body.page--landing
   > main
