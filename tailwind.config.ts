@@ -7,6 +7,11 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    colors: {
+      internationOrange: "hsla(var(--color-internation-orange-hsl), 1)",
+      whiteSmoke: "hsla(var(--color-white-smoke-hsl), 1)",
+      gunmetal: "hsla(var(--color-gunmetal-hsl), 1)",
+    },
     extend: {
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
