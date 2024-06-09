@@ -30,6 +30,64 @@ body {
   background: hsla(var(--background-hsl), 1);
 }
 
+.sidebar-layout {
+  display: grid;
+  gap: 0;
+  grid-template-rows: 4rem 6rem 6rem auto 6rem 4rem;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "header" "sidebar"
+    "top-widget" "main"
+    "bottom-widget" "footer";
+  height: max-content;
+}
+
+@media (min-width: 480px) {
+  .sidebar-layout {
+    display: grid;
+    grid-template-rows: 4rem 6rem auto 6rem 4rem;
+    grid-template-columns: 10rem auto auto;
+    grid-template-areas:
+      "header header header"
+      "sidebar top-widget top-widget"
+      "sidebar main main"
+      "sidebar bottom-widget bottom-widget"
+      "footer footer footer";
+    height: 100vh;
+  }
+}
+
+header {
+  grid-area: header;
+  background-color: aqua;
+}
+
+footer {
+  grid-area: footer;
+  background-color: blue;
+}
+
+nav {
+  grid-area: sidebar;
+  background-color: burlywood;
+}
+
+main {
+  grid-area: main;
+  background-color: chartreuse;
+}
+
+.top-widget {
+  grid-area: top-widget;
+
+  background-color: chocolate;
+}
+
+.bottom-widget {
+  grid-area: bottom-widget;
+  background-color: aquamarine;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;

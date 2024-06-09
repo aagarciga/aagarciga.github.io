@@ -23,7 +23,26 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <div className="sidebar-layout">
+          <header>
+
+          </header>
+          <nav>
+
+          </nav>
+          <article className="top-widget">
+
+          </article>
+          {children}
+          <article className="bottom-widget">
+
+          </article>
+          <footer>
+
+          </footer>
+        </div>
+      </body>
     </html>
   );
 }
