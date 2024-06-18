@@ -8,8 +8,8 @@ const config: Config = {
   ],
   theme: {
     colors: {
-      internationOrange: "hsla(var(--color-internation-orange-hsl), 1)",
-      whiteSmoke: "hsla(var(--color-white-smoke-hsl), 1)",
+      "internation-orange": "hsla(var(--color-internation-orange-hsl), 1)",
+      "white-smoke": "hsla(var(--color-white-smoke-hsl), 1)",
       gunmetal: "hsla(var(--color-gunmetal-hsl), 1)",
     },
     extend: {

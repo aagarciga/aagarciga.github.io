@@ -30,62 +30,93 @@ body {
   background: hsla(var(--background-hsl), 1);
 }
 
+/** Sidebar layout **/
+
+.sidebar-layout.landing {
+  display: grid;
+  gap: 0;
+  grid-template-rows: 0 auto;
+  grid-template-columns: auto;
+  grid-template-areas: "sidebar" "main";
+  height: 100vh;
+}
+
 .sidebar-layout {
   display: grid;
   gap: 0;
-  grid-template-rows: 4rem 6rem 6rem auto 6rem 4rem;
+  grid-template-rows: 0 6rem 6rem auto 6rem 4rem;
   grid-template-columns: 1fr;
   grid-template-areas:
-    "header" "sidebar"
+    "sidebar" "header"
     "top-widget" "main"
     "bottom-widget" "footer";
-  height: max-content;
+  height: 100vh;
+}
+
+.sidebar-layout .sidebar-layout__main-menu {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 @media (min-width: 480px) {
+  .sidebar-layout.landing {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 4rem auto;
+    grid-template-areas: "sidebar main";
+    height: 100vh;
+  }
+
   .sidebar-layout {
     display: grid;
     grid-template-rows: 4rem 6rem auto 6rem 4rem;
-    grid-template-columns: 10rem auto auto;
+    grid-template-columns: 4rem auto;
     grid-template-areas:
-      "header header header"
+      "sidebar header header"
       "sidebar top-widget top-widget"
       "sidebar main main"
       "sidebar bottom-widget bottom-widget"
-      "footer footer footer";
+      "sidebar footer footer";
     height: 100vh;
+  }
+
+  .sidebar-layout .sidebar-layout__main-menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
   }
 }
 
-header {
+.sidebar-layout__header {
   grid-area: header;
-  background-color: aqua;
+  outline: 1px dashed aqua;
 }
 
-footer {
+.sidebar-layout__footer {
   grid-area: footer;
-  background-color: blue;
+  outline: 1px dashed blue;
 }
 
-nav {
+.sidebar-layout__main-menu {
   grid-area: sidebar;
-  background-color: burlywood;
+  /* outline: 1px dashed burlywood; */
+  background-color: hsla(var(--color-internation-orange-hsl), 1);
 }
 
-main {
+.sidebar-layout__main {
   grid-area: main;
-  background-color: chartreuse;
+  outline: 1px dashed chartreuse;
 }
 
-.top-widget {
+.sidebar-layout__top-widget {
   grid-area: top-widget;
-
-  background-color: chocolate;
+  outline: 1px dashed chocolate;
 }
 
-.bottom-widget {
+.sidebar-layout__bottom-widget {
   grid-area: bottom-widget;
-  background-color: aquamarine;
+  outline: 1px dashed aquamarine;
 }
 
 @layer utilities {

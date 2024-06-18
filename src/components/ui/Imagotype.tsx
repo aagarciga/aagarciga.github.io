@@ -1,6 +1,6 @@
 import * as React from "react"
 
-function Logotype(props: React.JSX.IntrinsicAttributes & React.SVGProps<SVGSVGElement>) {
+function Imagotype(props: React.JSX.IntrinsicAttributes & React.SVGProps<SVGSVGElement>) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -17,4 +17,4 @@ function Logotype(props: React.JSX.IntrinsicAttributes & React.SVGProps<SVGSVGEl
   )
 }
 
-export default Logotype
+export default Imagotype
