@@ -15,3 +15,9 @@ npx create-next-app@latest
  git branch -M main
  git push -u origin main
 ```
+
+## Storybook for Next.js
+
+```bash
+npx storybook@latest init
+```

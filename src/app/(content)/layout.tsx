@@ -1,5 +1,5 @@
 
-import Branding from "@/components/ui/Branding";
+import Branding from "@/components/ui/branding";
 
 
 export default function Layout({ children }: { children: React.ReactNode }) {
