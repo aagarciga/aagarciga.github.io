@@ -1,5 +1,4 @@
-import MainMenu from "@/components/ui/main-menu";
-
+import { MainMenu } from "@/components/ui";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (

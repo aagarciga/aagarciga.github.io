@@ -1,7 +1,4 @@
-
-import Branding from "@/components/ui/branding";
-import MainMenu from "@/components/ui/main-menu";
-
+import { Branding, MainMenu } from "@/components/ui";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (

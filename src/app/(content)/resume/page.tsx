@@ -1,5 +1,4 @@
-import Breadcrumbs from "@/components/ui/breadcrumbs";
-
+import { Breadcrumbs } from "@/components/ui";
 
 export default function Page() {
 
