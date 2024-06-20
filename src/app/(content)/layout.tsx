@@ -1,5 +1,6 @@
 
 import Branding from "@/components/ui/branding";
+import MainMenu from "@/components/ui/main-menu";
 
 
 export default function Layout({ children }: { children: React.ReactNode }) {
@@ -11,7 +12,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         </div>
       </header>
       <nav className="sidebar-layout__main-menu">
-        <h1 className="flex items-center justify-center">Menu</h1>
+        <MainMenu />
       </nav>
       {children}
     </div>

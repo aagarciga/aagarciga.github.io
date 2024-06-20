@@ -1,8 +1,6 @@
 import { jost } from "@/app/fonts";
 import Monogram from "./monogram";
 
-
-
 export default function Branding() {
   const size = 42
   return (
