@@ -3,6 +3,17 @@
 @tailwind utilities;
 
 :root {
+  --font-size-h1: 3.052rem;
+  --font-size-h2: 2.441rem;
+  --font-size-h3: 1.953rem;
+  --font-size-h4: 1.563rem;
+  --font-size-h5: 1.25rem;
+  --font-size-body: 1rem;
+  --font-size-s: 0.8rem;
+  --font-size-xs: 0.64rem;
+
+  --font-base: var(--font-jost);
+
   --color-internation-orange-hsl: 19, 100%, 50%;
   --color-white-smoke-hsl: 0, 0%, 96%;
   --color-gunmetal-hsl: 198, 13%, 20%;
@@ -91,6 +102,11 @@ body {
     height: 100vh;
     padding: 4rem 1.5rem;
   }
+
+  .sidebar-layout__main {
+    padding-bottom: 0;
+    /* outline: 1px dashed chartreuse; */
+  }
 }
 
 .sidebar-layout__header {
@@ -111,6 +127,7 @@ body {
 
 .sidebar-layout__main {
   grid-area: main;
+  padding-bottom: 6rem;
   /* outline: 1px dashed chartreuse; */
 }
 

@@ -1,14 +1,58 @@
-import { jost } from "@/app/fonts";
+
+import { HTMLAttributes } from "react";
 import Monogram from "./monogram";
 
-export default function Branding() {
-  const size = 42
+
+interface BrandingProps {
+  className?: HTMLAttributes<HTMLDivElement>['className']
+  colorMode?: 'ligth' | 'dark' | 'auto'
+  size?: 'xs' | 's' | 'm' | 'l' | 'xl'
+}
+
+export default function Branding({
+  colorMode = 'auto',
+  size = 'm',
+  className,
+  ...props }: BrandingProps) {
+  const sizeMode = {
+    xs: 16,
+    s: 24,
+    m: 32,
+    l: 42,
+    xl: 58
+  }
+
+  const fontSize = {
+    xs: 'text-xs',
+    s: 'text-sm',
+    m: 'text-base',
+    l: 'text-xl',
+    xl: 'text-2xl'
+  }
+  const taglineFontSize = {
+    xs: 'text-xs',
+    s: 'text-xs',
+    m: 'text-xs',
+    l: 'text-s',
+    xl: 'text-base'
+  }
+  const color = {
+    auto: "text-gunmetal dark:text-white-smoke",
+    ligth: "text-gunmetal",
+    dark: "text-white-smoke"
+  }
+  const fillColor = {
+    auto: "hsla(var(--foreground-hsl), 1)",
+    ligth: "hsla(var(--color-gunmetal-hsl), 1)",
+    dark: "hsla(var(--color-white-smoke-hsl), 1)"
+  }
+
   return (
-    <div className={["branding w-auto flex gap-2 bg-white-smoke dark:bg-gunmetal text-gunmetal dark:text-white-smoke", jost.className].join('')} >
-      <Monogram width={size} height={size} fill="hsla(var(--foreground-hsl), 1)" />
-      <div className="branding-text-layout flex flex-col gap-0 text-gunmetal dark:text-white-smoke">
-        <span className="brand-name">Alex Alvarez Gárciga</span>
-        <span className="tagline text-xs">Software Engineer & Web Developer</span>
+    <div {...props} className={["branding w-max flex items-center gap-2 bg-transparent", color[colorMode], className].join(' ')} >
+      <Monogram width={sizeMode[size]} height={size} fill={fillColor[colorMode]} />
+      <div className={["branding-text-layout flex flex-col gap-0 content-start", color[colorMode]].join(' ')}>
+        <span className={["brand-name", fontSize[size]].join(" ")}>Alex Alvarez Gárciga</span>
+        <span className={["tagline", taglineFontSize[size]].join(" ")}>Software Engineer & Web Developer</span>
       </div>
     </div>
   )

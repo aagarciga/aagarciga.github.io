@@ -1,14 +1,16 @@
 import { Meta, Typeset } from "@storybook/blocks";
-import { jost } from "@/app/fonts";
+import { jost, jetbrainMono } from "@/app/fonts";
 
 <Meta title="Typography" />
 
 # App Fonts
 
+## Jost
+
 <Typeset className="bg-white-smoke dark:bg-gunmetal text-gunmetal dark:text-white-smoke"
-  fontFamily={"jost"}
-  fontWeight="200"
-  sampleText="Lorem ipsum dolor sit amen..."
+  fontFamily={"Jost"}
+  fontWeight="400"
+  sampleText="Alex Alvarez Garciga"
   fontSizes={[
      "3.052rem",
     "2.441rem",
@@ -20,4 +22,23 @@ import { jost } from "@/app/fonts";
     "0.64rem",
   ]}
 
+/>
+
+## JetBrains Mono
+
+<Typeset
+  className="bg-white-smoke dark:bg-gunmetal text-gunmetal dark:text-white-smoke"
+  fontFamily={"JetBrains Mono"}
+  fontWeight="400"
+  sampleText="((name)=>(`Hello $name`))('Alex')"
+  fontSizes={[
+    "3.052rem",
+    "2.441rem",
+    "1.953rem",
+    "1.563rem",
+    "1.25rem",
+    "1rem",
+    "0.8rem",
+    "0.64rem",
+  ]}
 />
