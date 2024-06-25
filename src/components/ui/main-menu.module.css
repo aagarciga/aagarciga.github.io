@@ -41,7 +41,7 @@
   justify-content: space-evenly;
 }
 
-.main-menu__Links li {
+.main-menu__Links li a {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -115,7 +115,7 @@
     padding: 0 0 0 0.2rem;
   }
 
-  .main-menu__Links li {
+  .main-menu__Links li a {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;

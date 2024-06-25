@@ -4,6 +4,7 @@ import classes from './main-menu.module.css'
 import { useState } from 'react'
 import { clsx } from 'clsx'
 import Branding from './branding'
+import Link from 'next/link'
 
 
 export default function MainMenu() {
@@ -24,22 +25,24 @@ export default function MainMenu() {
         <Branding colorMode='dark' className={classes["main-menu__header__branding"]} />
       </div>
       <ul className={[classes['main-menu__Links']].join(' ')}>
-        <li>
+        {/* <li>
           <CodeBracketSquareIcon width={24} height={24} color='hsla(var(--color-white-smoke-hsl), 1)' />
           <span>Blog</span>
+        </li> */}
+        <li className='hover:underline'>
+          <Link href={"/resume"} >
+            <DocumentTextIcon width={24} height={24} color='hsla(var(--color-white-smoke-hsl, 1)' />
+            <span>Resume</span>
+          </Link>
         </li>
-        <li>
-          <DocumentTextIcon width={24} height={24} color='hsla(var(--color-white-smoke-hsl, 1)' />
-          <span>Resume</span>
-        </li>
-        <li>
+        {/* <li>
           <BriefcaseIcon width={24} height={24} color='hsla(var(--color-white-smoke-hsl), 1)' />
           <span>Portfolio</span>
         </li>
         <li>
           <ChatBubbleLeftEllipsisIcon width={24} height={24} color='hsla(var(--color-white-smoke-hsl), 1)' />
           <span>Gestbook</span>
-        </li>
+        </li> */}
 
       </ul>
       <footer className={[classes['main-menu__footer']].join(' ')}>

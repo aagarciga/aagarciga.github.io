@@ -11,6 +11,15 @@ const config: Config = {
       "internation-orange": "hsla(var(--color-internation-orange-hsl), 1)",
       "white-smoke": "hsla(var(--color-white-smoke-hsl), 1)",
       gunmetal: "hsla(var(--color-gunmetal-hsl), 1)",
+      azure: "hsla(var(--color-azure-hsl), 1)",
+      "artyclick-red": "hsla(var(--color-artyclick-red-hsl), 1)",
+      "chrome-yello": "hsla(var(--color-chrome-yello-hsl), 1)",
+      "primary": "hsla(var(--color-primary-hsl), 1)",
+      "secondary": "hsla(var(--color-secondary-hsl), 1)",
+      "error": "hsla(var(--color-error-hsl), 1)",
+      "warning": "hsla(var(--color-warning-hsl), 1)",
+      "foreground": "hsla(var(--color-foreground-hsl), 1)",
+      "background": "hsla(var(--color-background-hsl), 1)",
     },
     extend: {
       backgroundImage: {
