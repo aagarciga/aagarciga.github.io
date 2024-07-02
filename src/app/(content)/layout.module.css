@@ -5,7 +5,7 @@
   grid-template-rows: auto auto 6rem;
   grid-template-columns: 1fr;
   height: auto;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   min-width: min-content;
 }
 

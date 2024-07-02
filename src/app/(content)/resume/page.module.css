@@ -1,4 +1,15 @@
 .main {
   padding: var(--air-3);
-  width: clamp(20rem, 100%, 50rem);
+  width: clamp(20rem, 100%, 60rem);
+}
+
+.tech-skills {
+  display: none;
+}
+
+@media (min-width: 710px) {
+  .tech-skills {
+    display: block;
+    margin-bottom: var(--air-5);
+  }
 }

@@ -179,3 +179,18 @@
     margin-left: 0.8rem;
   }
 }
+
+@media (max-height: 620px) and (min-width: 480px) {
+  .menu {
+    top: 2rem;
+    bottom: 4rem;
+    left: 1.5rem;
+    width: 4rem;
+  }
+
+  .menu header {
+    margin-bottom: 2rem;
+
+    /* outline: thin dashed white; */
+  }
+}

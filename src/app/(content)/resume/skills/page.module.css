@@ -1,0 +1,4 @@
+.main {
+  padding: var(--air-3);
+  width: clamp(20rem, 100%, 60rem);
+}

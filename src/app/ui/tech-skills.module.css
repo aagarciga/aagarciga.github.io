@@ -1,0 +1,38 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.title {
+  margin-bottom: 0rem;
+  font-size: var(--font-size-h3);
+  margin-bottom: var(--air-3);
+}
+
+.skills {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 0rem;
+}
+
+.skills > div {
+  flex: 1 8rem;
+}
+
+.category h4 {
+  font-size: var(--font-size-h5);
+  margin-bottom: var(--air-3);
+}
+
+.sub-group {
+  margin-bottom: var(--air-3);
+}
+
+.sub-group h5 {
+  color: hsla(var(--color-secondary-hsl), 1);
+  font-size: var(--font-size-base);
+  margin-bottom: var(--air-2);
+}

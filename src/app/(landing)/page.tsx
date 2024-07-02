@@ -1,11 +1,12 @@
 "use client"
 import { DocumentTextIcon } from "@heroicons/react/24/solid";
-import { Brand } from "../ui";
+import { Brand, Experience, TechSkills } from "../ui";
 import { Button } from "@/design-system/components";
 import { useRouter } from "next/navigation";
 
 import styles from './page.module.css'
-import Experience from "../ui/experience";
+
+
 
 export default function Home() {
   const router = useRouter()
@@ -21,8 +22,12 @@ export default function Home() {
         <p className={[].join(' ')}>I enjoy mentoring, collaborating with cross-functional teams, and implementing agile methodologies to deliver user-friendly, maintainable, and high-performance software. I am always eager to learn and adopt new languages, frameworks, and tools to meet project needs and solve real-world problems.</p>
         <p className={[].join(' ')}>In my past role as a lead front-end engineer at Origin IT Solutions, I combine my passion for web development and design with my interest in cloud infrastructure and open web technologies. I have more than 12 years of experience in creating and improving web applications for various clients and industries, using HTML, ES5, ES6, Typescript, React, CSS, Next.js, Figma, C# and .Net Technologies.</p>
         <Button className={[].join(' ')} label="Get my resume" primary Icon={DocumentTextIcon} onClick={() => router.push('/resume')} />
+
+
+
       </section>
       <aside className={[].join(' ')}>
+
         <Experience className={styles.experience} />
         <aside className={[styles.sidebar].join(' ')}></aside>
       </aside>
