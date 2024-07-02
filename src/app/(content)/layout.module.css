@@ -1,0 +1,40 @@
+.layout {
+  display: grid;
+  gap: 0;
+  grid-template-areas: "header" "main" "aside";
+  grid-template-rows: auto auto 6rem;
+  grid-template-columns: 1fr;
+  height: auto;
+  min-height: 100vh;
+  min-width: min-content;
+}
+
+.layout > aside {
+  /* outline: 1px dashed red; */
+  grid-area: aside;
+}
+
+.layout > header {
+  /* outline: 1px solid yellow; */
+  grid-area: header;
+  padding: var(--air-3);
+}
+
+.layout > main {
+  /* outline: 1px dashed blue; */
+  grid-area: main;
+}
+
+@media (min-width: 480px) {
+  .layout {
+    grid-template-areas:
+      "aside header"
+      "aside main";
+    grid-template-columns: 7rem auto;
+    grid-template-rows: 1fr;
+  }
+
+  .layout > header {
+    padding: var(--air-5) var(--air-3) var(--air-4) var(--air-3);
+  }
+}

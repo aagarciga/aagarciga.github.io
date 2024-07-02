@@ -1,12 +1,13 @@
-import { MainMenu } from "@/components/ui";
+
+import { MainMenu } from '../ui'
+import styles from './layout.module.css'
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
-    <div className="sidebar-layout landing">
-      <div className="sidebar-layout__main-menu">
+    <div className={styles.layout}>
+      <aside>
         <MainMenu />
-
-      </div>
+      </aside>
       {children}
     </div>
   )

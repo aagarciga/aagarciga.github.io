@@ -1,0 +1,41 @@
+.experiences {
+}
+
+.experiences header {
+  margin-bottom: var(--air-4);
+}
+
+.experiences h2 {
+  font-size: var(--font-size-h2);
+}
+
+.experience {
+  margin-bottom: var(--air-4);
+}
+
+.experience > header {
+  margin-bottom: var(--air-3);
+}
+
+.experience > header h3 {
+  font-size: var(--font-size-h3);
+}
+
+.experience > header span {
+  font-size: var(--font-size-s);
+}
+
+.experience h5 {
+  font-size: var(--font-size-h5);
+  font-weight: 600;
+  margin-bottom: var(--air-3);
+}
+
+.experience ul {
+  margin-left: var(--air-3);
+}
+
+.experience ul li {
+  margin-bottom: var(--air-2);
+  list-style: disc;
+}

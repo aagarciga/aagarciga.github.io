@@ -21,9 +21,11 @@ export default function Breadcrumbs({ breadcrumbs }:
             aria-current={breadcrumb.active}
             className={clsx(breadcrumb.active
               ? "text-gray-200 dark:text-gray-950"
-              : "text-gunmetal dark:text-white-smoke")}
+              : "text-aerospace_orange dark:text-white-smoke")}
           >
-            <Link href={breadcrumb.href}>{breadcrumb.label}</Link>
+            {!breadcrumb.active
+              ? <Link href={breadcrumb.href}>{breadcrumb.label}</Link>
+              : breadcrumb.label}
             {index < breadcrumbs.length - 1
               ? <span className='mx-1 inline-block'>/</span>
               : null}

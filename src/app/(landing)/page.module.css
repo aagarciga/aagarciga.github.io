@@ -1,0 +1,81 @@
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.introduction {
+}
+
+.introduction header {
+  margin: var(--air-3) 0 var(--air-4) var(--air-3);
+}
+.introduction p {
+  margin: var(--air-0) var(--air-3) var(--air-4) var(--air-3);
+}
+.introduction button {
+  margin: var(--air-0) var(--air-5) var(--air-4) var(--air-3);
+}
+
+.main > aside {
+  background-color: hsla(var(--color-gunmetal-90-hsl), 1);
+  color: hsla(var(--color-white-smoke-hsl), 1);
+}
+
+.experience {
+  width: clamp(20rem, 100%, 50rem);
+
+  padding: var(--air-3);
+}
+
+.sidebar {
+  display: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  .experience {
+    background-color: hsla(var(--color-gunmetal-90-hsl), 1);
+    color: hsla(var(--color-white-smoke-hsl), 1);
+  }
+}
+
+@media (min-width: 480px) {
+  .introduction header {
+    margin: var(--air-5) 0 var(--air-4) var(--air-3);
+  }
+}
+
+@media (min-width: 1024px) {
+  .main {
+    flex-direction: row;
+  }
+
+  .introduction {
+    flex: 1 1 16rem;
+  }
+  .introduction header {
+    margin: var(--air-5) 0 var(--air-4) var(--air-3);
+  }
+
+  .introduction p {
+    margin: var(--air-0) var(--air-5) var(--air-4) var(--air-3);
+  }
+  .introduction button {
+    margin: var(--air-0) var(--air-5) var(--air-4) var(--air-3);
+  }
+
+  .main > aside {
+    flex: 2 1 20rem;
+    display: flex;
+  }
+
+  .experience {
+    padding: var(--air-5) var(--air-4) var(--air-3) var(--air-5);
+  }
+
+  .sidebar {
+    display: block;
+    width: clamp(10rem, auto, 20rem);
+    background-color: hsla(var(--color-gunmetal-hsl), 1);
+    height: 100%;
+  }
+}

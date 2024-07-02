@@ -8,24 +8,48 @@
   --font-size-h3: 1.953rem;
   --font-size-h4: 1.563rem;
   --font-size-h5: 1.25rem;
-  --font-size-body: 1rem;
+  --font-size-base: 1rem;
   --font-size-s: 0.8rem;
   --font-size-xs: 0.64rem;
 
   --font-base: var(--font-jost);
 
-  --color-internation-orange-hsl: 19, 100%, 50%;
+  --air-0: 0;
+  --air-1: 0.25rem;
+  --air-2: 0.5rem;
+  --air-3: 1rem;
+  --air-4: 2rem;
+  --air-5: 4rem;
+  --air-6: 8rem;
+  --air-7: 16rem;
+  --air-8: 20rem;
+  --air-9: 32rem;
+  --air-10: 64rem;
+  --air-11: 100rem;
+
+  --color-aerospace-orange-hsl: 19, 100%, 50%;
+  --color-aerospace-orange-800: 19, 100%, 80%;
+
+  --color-brandeis-blue-hsl: 215, 95%, 51%;
+  --color-brandeis-blue-800: 215, 96%, 81%;
+
   --color-white-smoke-hsl: 0, 0%, 96%;
+  --color-white-smoke-70-hsl: 0, 0%, 21%;
   --color-gunmetal-hsl: 198, 13%, 20%;
+  --color-gunmetal-90-hsl: 199, 11%, 27%;
+  --color-gunmetal-50-hsl: 198, 9%, 62%;
+  --color-gunmetal-20-hsl: 190, 12%, 90%;
 
-  --color-azure-hsl: 200, 100%, 50%;
-  --color-artyclick-red-hsl: 0, 100%, 50%;
-  --color-chrome-yellow-hsl: 39, 100%, 50%;
-
-  --color-primary-hsl: var(--color-internation-orange-hsl);
-  --color-secondary-hsl: var(--color-azure-hsl);
+  --color-primary-hsl: var(--color-brandeis-blue-hsl);
+  --color-secondary-hsl: var(--color-aerospace-orange-hsl);
   --color-error-hsl: var(--color-artyclick-red-hsl);
   --color-warning-hsl: var(--color-chrome-yellow-hsl);
+
+  --color-border-hsl: var(--color-gunmetal-20-hsl);
+
+  --color-disabled-hsl: var(--color-gunmetal-50-hsl);
+  --color-primary-disabled-hsl: var(--color-brandeis-blue-800);
+  --color-secondary-disabled-hsl: var(--color-aerospace-orange-800);
 
   --color-background-hsl: var(--color-white-smoke-hsl);
   --color-foreground-hsl: var(--color-gunmetal-hsl);
@@ -35,6 +59,7 @@
   :root {
     --color-background-hsl: var(--color-gunmetal-hsl);
     --color-foreground-hsl: var(--color-white-smoke-hsl);
+    --color-border-hsl: var(--color-gunmetal-20-hsl);
   }
 }
 
@@ -47,114 +72,6 @@
 body {
   color: hsla(var(--color-foreground-hsl), 1);
   background: hsla(var(--color-background-hsl), 1);
-}
-
-/** Sidebar layout **/
-
-.sidebar-layout.landing {
-  display: grid;
-  gap: 0;
-  grid-template-rows: 0 auto;
-  grid-template-columns: auto;
-  grid-template-areas: "sidebar" "main";
-  height: 100vh;
-}
-
-.sidebar-layout {
-  display: grid;
-  gap: 0;
-  grid-template-rows: 0 6rem 2rem auto 6rem 4rem;
-  grid-template-columns: 1fr;
-  grid-template-areas:
-    "sidebar" "header"
-    "top-widget" "main"
-    "bottom-widget" "footer";
-  height: 100vh;
-}
-
-.sidebar-layout .sidebar-layout__main-menu {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  height: 112px;
-  padding: 16px 8px;
-}
-
-.sidebar-layout__header {
-  grid-area: header;
-  /* outline: 1px dashed aqua; */
-}
-
-.sidebar-layout__footer {
-  grid-area: footer;
-  /* outline: 1px dashed blue; */
-}
-
-.sidebar-layout__main-menu {
-  grid-area: sidebar;
-  /* outline: 1px dashed burlywood; */
-  /* background-color: hsla(var(--color-internation-orange-hsl), 1); */
-}
-
-.sidebar-layout__main {
-  grid-area: main;
-  padding-bottom: 6rem;
-
-  /* outline: 1px dashed chartreuse; */
-}
-
-.sidebar-layout__top-widget {
-  grid-area: top-widget;
-  padding-left: 1rem;
-  /* outline: 1px dashed chocolate; */
-}
-
-.sidebar-layout__bottom-widget {
-  grid-area: bottom-widget;
-  /* outline: 1px dashed aquamarine; */
-}
-
-@media (min-width: 480px) {
-  .sidebar-layout.landing {
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 7rem auto;
-    grid-template-areas: "sidebar main";
-    height: 100vh;
-  }
-
-  .sidebar-layout {
-    display: grid;
-    grid-template-rows: 8rem 4rem auto 6rem 4rem;
-    grid-template-columns: 7rem auto;
-    grid-template-areas:
-      "sidebar header header"
-      "sidebar top-widget top-widget"
-      "sidebar main main"
-      "sidebar bottom-widget bottom-widget"
-      "sidebar footer footer";
-    height: 100vh;
-  }
-
-  .sidebar-layout .sidebar-layout__main-menu {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    padding: 4rem 1.5rem;
-  }
-
-  .sidebar-layout__main {
-    padding-bottom: 0;
-    padding: 0;
-    /* outline: 1px dashed chartreuse; */
-  }
-
-  .sidebar-layout__top-widget {
-    padding-left: 0;
-    /* outline: 1px dashed chocolate; */
-  }
 }
 
 @layer utilities {

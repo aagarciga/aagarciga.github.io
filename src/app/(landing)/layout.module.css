@@ -1,0 +1,29 @@
+.layout {
+  /* outline: 1px dashed white; */
+  display: grid;
+  gap: 0;
+  grid-template-areas: "main" "aside";
+  grid-template-rows: auto 7rem;
+  grid-template-columns: 1fr;
+  height: auto;
+  min-height: 100vh;
+  min-width: min-content;
+}
+
+.layout > aside {
+  /* outline: 1px dashed red; */
+  grid-area: aside;
+}
+
+.layout > main {
+  /* outline: 1px dashed blue; */
+  grid-area: main;
+}
+
+@media (min-width: 480px) {
+  .layout {
+    grid-template-areas: "aside main";
+    grid-template-columns: 7rem auto;
+    grid-template-rows: 1fr;
+  }
+}

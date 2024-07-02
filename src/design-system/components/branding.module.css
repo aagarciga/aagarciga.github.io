@@ -1,0 +1,69 @@
+.link {
+  display: inline-block;
+}
+
+.link figure {
+  display: flex;
+  gap: 8px;
+}
+
+.link.horizontal figure {
+  flex-direction: row;
+}
+.link.vertical figure {
+  flex-direction: column;
+  align-items: center;
+}
+
+.link.horizontal figure figcaption {
+  display: flex;
+  flex-direction: column;
+}
+.link.vertical figure figcaption {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.brandname {
+}
+
+.brandname.xsmall {
+  font-size: var(--font-size-s);
+}
+
+.brandname.small {
+  font-size: var(--font-size-s);
+}
+
+.brandname.medium {
+  font-size: var(--font-size-base);
+}
+.brandname.large {
+  font-size: var(--font-size-h5);
+}
+.brandname.xlarge {
+  font-size: var(--font-size-h4);
+}
+
+.tagline {
+}
+
+.tagline.xsmall {
+  font-size: var(--font-size-xs);
+}
+
+.tagline.small {
+  font-size: var(--font-size-xs);
+}
+
+.tagline.medium {
+  font-size: var(--font-size-xs);
+}
+.tagline.large {
+  font-size: var(--font-size-s);
+}
+
+.tagline.xlarge {
+  font-size: var(--font-size-base);
+}

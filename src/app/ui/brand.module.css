@@ -1,0 +1,7 @@
+.light {
+  color: hsla(var(--color-gunmetal-hsl), 1);
+}
+
+.dark {
+  color: hsla(var(--color-white-smoke-hsl), 1);
+}

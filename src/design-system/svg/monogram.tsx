@@ -1,6 +1,6 @@
 import * as React from "react"
 
-function Monogram(props: React.JSX.IntrinsicAttributes & React.SVGProps<SVGSVGElement>) {
+export default function Monogram(props: React.JSX.IntrinsicAttributes & React.SVGProps<SVGSVGElement>) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -16,5 +16,3 @@ function Monogram(props: React.JSX.IntrinsicAttributes & React.SVGProps<SVGSVGEl
     </svg>
   )
 }
-
-export default Monogram
