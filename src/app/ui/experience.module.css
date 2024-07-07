@@ -1,6 +1,10 @@
 .experiences {
 }
 
+.description {
+  margin-bottom: var(--air-4);
+}
+
 .experiences header {
   margin-bottom: var(--air-4);
 }
