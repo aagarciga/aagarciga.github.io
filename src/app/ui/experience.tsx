@@ -19,11 +19,11 @@ export default function Experience({ className = '' }: ExperienceProps) {
       duration: '04/2020 - 01/2024',
       role: 'Lead Frontend-Engineer | Full Stack Engineer',
       description: [
-        'Led the development of a healthcare and wellness solution for medical screening and doctor-patient shared decision-making.',
-        'Implemented best practices to drive the software development lifecycle through Microsoft Azure DevOps and agile methodologies.',
-        'Served as a consultant to clients on UI/UX design and front-end implementation.',
-        'Integrated new features and improved performance in existing products, enhancing client trust in the company\'s current solutions and services.',
-        'Architected, designed, and implemented a React Native mobile application for healthcare and health insurance using Microsoft Azure Identity Platform and zero-trust security.',
+        'Led the front-end development of a healthcare and wellness solution for medical screening and doctor-patient shared decision-making, focused on improving the health system in Suriname.',
+        'Spearheaded and enforced best practices to drive the software development lifecycle through Microsoft Azure DevOps and agile methodologies.',
+        'Served as a consultant to the company\'s clients on UI/UX design and front-end implementation, ensuring new projects and opportunities for extending contracts and improving B2B client relationships.',
+        'Architected, designed, and implemented an Expo-based React Native mobile application for healthcare and health insurance using Microsoft Azure Identity Platform for zero-trust security and Microsoft Azure Communication Services for messaging. This creation opened up new opportunities for the company to expand into the Sint Maarten and Curaçao markets.',
+        'Integrated new features and improved performance in some of the company existing products, leveraging and improving client trust in the company\'s current solutions and services.',
       ],
     },
     // {
@@ -45,13 +45,24 @@ export default function Experience({ className = '' }: ExperienceProps) {
       role: 'Technical Lead | Chief Technology Officer',
       description: [
         'Led the development of internal web applications using .NET MVC 5 and Angular, implementing the company\'s overall technology strategy, roadmap, and vision to support business objectives and enhance operational efficiency.',
-        'Spearheaded the creation of a cutting-edge offline map application, leveraging Leaflet and Ionic for the frontend, and designing a microservices architecture with RabbitMQ for efficient communication.',
+        'Spearheaded the creation of a cutting-edge offline map application, leveraging Leaflet and Ionic for the frontend, and designing a microservices architecture with RabbitMQ to serve the application',
         'Implemented and managed Azure Cloud services for both company infrastructure and project deployments, optimizing performance and scalability.',
         'Collaborated with cross-functional teams to translate business requirements into technical specifications and deliverables.',
         'Architected and implemented RESTful APIs to support internal systems and mobile app development, ensuring seamless integration between frontend and backend systems.',
         'Conducted code reviews, implemented agile methodologies, and established CI/CD pipelines to improve development efficiency and product quality.',
         'Played a key role in technical decision-making processes, balancing innovation with practical implementation to meet business objectives',
         'Actively participated in troubleshooting and resolving complex technical issues across various projects and platforms.'
+      ],
+    },
+
+
+    {
+      company: 'University of Havana, Information Technology Directorate',
+      duration: '19/2012 - 09/2016',
+      role: 'Software Engineer',
+      description: [
+        'Researched web standards and front-end technologies: HTML5, ECMAScript 6, and CSS3, and taught courses on them to Computer Science Bachelor undergraduates & software engineers.',
+        'Developed and deployed responsive UX/UI designs for multiple and faculty websites, improving online presence and user engagement.',
       ],
     },
     {
@@ -70,7 +81,7 @@ export default function Experience({ className = '' }: ExperienceProps) {
       duration: '09/2012 - 09/2016',
       role: 'Full Stack Software Engineer | Freelancer',
       description: [
-        'Prior experience includes roles at the University of Havana IT Department and freelance work for companies like GMixon-Pixeliris and Fermen Corporation.',
+        'Prior experience includes freelance work for companies like GMixon-Pixeliris, Tutti Pizza, and Fermen Corporation.',
       ],
     },
   ];
