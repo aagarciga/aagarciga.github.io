@@ -185,7 +185,7 @@
     -webkit-user-select: none;
     user-select: none;
     cursor: default;
-    background-color: hsla(var(--color-gunmetal-hsl), 1);
+    background-color: hsla(var(--color-gunmetal-90-hsl), 1);
     color: hsla(var(--color-white-smoke-hsl), 1);
     text-align: center;
     border-radius: var(--air-1);
@@ -195,6 +195,10 @@
     padding: 0.5rem 1rem;
     margin-top: -2.5rem;
     font-size: var(--font-size-base) !important;
+
+    -webkit-box-shadow: 2px 6px 10px -5px rgba(44, 54, 58, 0.43);
+    -moz-box-shadow: 2px 6px 10px -5px rgba(44, 54, 58, 0.43);
+    box-shadow: 2px 6px 10px -5px rgba(44, 54, 58, 0.43);
   }
 
   .tooltip::after {
@@ -206,7 +210,7 @@
     margin-top: -5px;
     border-width: 5px;
     border-style: solid;
-    border-color: transparent hsla(var(--color-gunmetal-hsl), 1) transparent
+    border-color: transparent hsla(var(--color-gunmetal-90-hsl), 1) transparent
       transparent;
   }
 
