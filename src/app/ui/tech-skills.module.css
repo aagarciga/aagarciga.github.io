@@ -36,3 +36,9 @@
   font-size: var(--font-size-base);
   margin-bottom: var(--air-2);
 }
+
+@media (prefers-color-scheme: dark) {
+  .sub-group h5 {
+    color: hsla(var(--color-secondary-disabled-hsl), 1);
+  }
+}

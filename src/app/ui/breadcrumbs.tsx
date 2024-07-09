@@ -21,7 +21,7 @@ export default function Breadcrumbs({ breadcrumbs }:
             aria-current={breadcrumb.active}
             className={clsx(breadcrumb.active
               ? "text-gray-200 dark:text-gray-950"
-              : "text-aerospace_orange dark:text-white-smoke")}
+              : "text-brandeis_blue dark:text-brandeis_blue-800")}
           >
             {!breadcrumb.active
               ? <Link href={breadcrumb.href}>{breadcrumb.label}</Link>

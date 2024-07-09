@@ -18,12 +18,12 @@ export default function Page() {
         />
       </section>
       <nav role="navigation" className="flex flex-col gap-2">
-        <Link href={"/resume/2024.Software Engineer.Alex Alvarez Garciga.docx"} className="text-brandeis_blue hover:underline flex items-center gap-1" download={true}>
-          <DocumentArrowDownIcon width={16} height={16} fill="hsla(var(--color-aerospace-orange-hsl),1)" />
+        <Link href={"/resume/2024.Software Engineer.Alex Alvarez Garciga.docx"} className="text-brandeis_blue dark:text-brandeis_blue-800 hover:underline flex items-center gap-1" download={true}>
+          <DocumentArrowDownIcon width={16} height={16} fill="hsla(var(--color-primary-hsl),1)" />
           <span>Download Resume</span>
         </Link>
-        <Link href="/resume/skills" className="text-brandeis_blue hover:underline flex items-center gap-1">
-          <PuzzlePieceIcon width={16} height={16} fill="hsla(var(--color-aerospace-orange-hsl),1)" />
+        <Link href="/resume/skills" className="text-brandeis_blue dark:text-brandeis_blue-800 hover:underline flex items-center gap-1">
+          <PuzzlePieceIcon width={16} height={16} fill="hsla(var(--color-primary-hsl),1)" />
           <span>View Technical Competencies</span>
         </Link>
       </nav>

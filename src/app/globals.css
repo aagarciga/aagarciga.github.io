@@ -28,10 +28,10 @@
   --air-11: 100rem;
 
   --color-aerospace-orange-hsl: 19, 100%, 50%;
-  --color-aerospace-orange-800: 19, 100%, 80%;
+  --color-aerospace-orange-800-hsl: 19, 100%, 80%;
 
   --color-brandeis-blue-hsl: 215, 95%, 51%;
-  --color-brandeis-blue-800: 215, 96%, 81%;
+  --color-brandeis-blue-800-hsl: 215, 96%, 81%;
 
   --color-white-smoke-hsl: 0, 0%, 96%;
   --color-white-smoke-70-hsl: 0, 0%, 21%;
@@ -48,8 +48,8 @@
   --color-border-hsl: var(--color-gunmetal-20-hsl);
 
   --color-disabled-hsl: var(--color-gunmetal-50-hsl);
-  --color-primary-disabled-hsl: var(--color-brandeis-blue-800);
-  --color-secondary-disabled-hsl: var(--color-aerospace-orange-800);
+  --color-primary-disabled-hsl: var(--color-brandeis-blue-800-hsl);
+  --color-secondary-disabled-hsl: var(--color-aerospace-orange-800-hsl);
 
   --color-background-hsl: var(--color-white-smoke-hsl);
   --color-foreground-hsl: var(--color-gunmetal-hsl);

@@ -33,6 +33,7 @@
   font-size: var(--font-size-h5);
   font-weight: 500;
   margin-bottom: var(--air-3);
+  color: hsla(var(--color-aerospace-orange-800-hsl), 1);
 }
 
 .experience ul {
