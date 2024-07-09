@@ -35,25 +35,30 @@ export default function MainMenu() {
             <CodeBracketSquareIcon width={24} height={24} />
             <span>Blog</span>
           </Link>
+          <span className={styles.tooltip}>Blog</span>
         </li>
         <li>
           <Link href={"/resume"}>
             <DocumentTextIcon width={24} height={24} />
             <span>Resume</span>
           </Link>
+          <span className={styles.tooltip}>Resume</span>
         </li>
         <li>
           <Link href={"/portfolio"}>
             <BriefcaseIcon width={24} height={24} />
             <span>Portfolio</span>
           </Link>
+          <span className={styles.tooltip}>Portfolio</span>
         </li>
 
         <li>
           <Link href={"/gestbook"}>
             <ChatBubbleLeftEllipsisIcon width={24} height={24} />
             <span>Gestbook</span>
+
           </Link>
+          <span className={styles.tooltip}>Gestbook</span>
         </li>
 
       </ul>

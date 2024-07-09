@@ -1,18 +1,17 @@
 .menu {
-  background-color: hsla(var(--color-secondary-hsl), 1);
   position: fixed;
+  background-color: hsla(var(--color-secondary-hsl), 1);
   bottom: 1rem;
   left: 1rem;
   right: 1rem;
   display: flex;
   flex-direction: row;
   align-items: center;
-  align-content: center;
-  justify-content: center;
+  place-content: center space-between;
   border-radius: 0.5rem;
   z-index: 1;
-  overflow: hidden;
-  justify-content: space-between;
+  overflow: visible;
+
   -webkit-box-shadow: 2px 6px 10px -5px rgba(44, 54, 58, 0.43);
   -moz-box-shadow: 2px 6px 10px -5px rgba(44, 54, 58, 0.43);
   box-shadow: 2px 6px 10px -5px rgba(44, 54, 58, 0.43);
@@ -52,10 +51,14 @@
   fill: hsla(var(--color-white-smoke-hsl), 1);
 }
 
-.links li span {
+.links li a span {
   display: inline-block;
   font-size: var(--font-size-xs);
   color: hsla(var(--color-white-smoke-hsl), 1);
+}
+
+.tooltip {
+  display: none;
 }
 
 .menu > footer {
@@ -67,18 +70,18 @@
   /* outline: thin dashed white; */
 }
 
-@media (min-width: 480px) {
+@media (width>= 480px) {
   .menu {
     position: fixed;
     top: 4rem;
     bottom: 4rem;
     left: 1.5rem;
     width: 4rem;
-
     flex-direction: column;
     align-items: flex-start;
     min-width: 4rem;
     height: clamp(420px, 80%, 87vh);
+    overflow: visible;
   }
 
   .menu.expanded {
@@ -99,9 +102,7 @@
 
   .toggler {
     /* outline: thin dashed white; */
-    /* outline: thin dashed white; */
     display: flex;
-    /* background-color: hsla(var(--color-gunmetal-hsl), 1); */
     color: hsla(var(--color-white-smoke-hsl), 1);
     border-radius: 4px;
     padding: 0.5rem;
@@ -113,10 +114,10 @@
 
   .branding {
     /* outline: thin dashed white; */
-    display: flex;
+    display: none;
   }
 
-  .menu.opened .branding {
+  .menu.expanded .branding {
     display: flex;
     opacity: 1;
   }
@@ -129,12 +130,14 @@
     gap: 0.5rem;
     width: 100%;
     padding: 0 0.75rem;
+    overflow: visible;
   }
 
   .links li {
     /* outline: thin dashed white; */
     color: hsla(var(--color-white-smoke-hsl), 1);
     border-radius: 4px;
+    overflow: visible;
   }
 
   .links li:hover {
@@ -154,7 +157,7 @@
   .links a:hover {
   }
 
-  .links li span {
+  .links li a span {
     /* outline: thin dashed white; */
     display: none;
     margin-left: 0.5rem;
@@ -166,9 +169,45 @@
     /* display: flex; */
     font-size: var(--font-size-base);
   }
-  .menu.expanded .links li span {
+  .menu.expanded .links li a span {
     display: inline-block;
     opacity: 1;
+  }
+  .menu.expanded .links li .tooltip {
+    display: none;
+  }
+
+  .links li:hover .tooltip {
+    display: block;
+  }
+  .tooltip {
+    display: none;
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: default;
+    background-color: hsla(var(--color-gunmetal-hsl), 1);
+    color: hsla(var(--color-white-smoke-hsl), 1);
+    text-align: center;
+    border-radius: var(--air-1);
+    position: absolute;
+    z-index: 10;
+    left: 3.5rem;
+    padding: 0.5rem 1rem;
+    margin-top: -2.5rem;
+    font-size: var(--font-size-base) !important;
+  }
+
+  .tooltip::after {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    margin-left: -9px;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent hsla(var(--color-gunmetal-hsl), 1) transparent
+      transparent;
   }
 
   .menu > footer {
@@ -180,7 +219,7 @@
   }
 }
 
-@media (max-height: 620px) and (min-width: 480px) {
+@media (height <= 620px) and (width>= 480px) {
   .menu {
     top: 2rem;
     bottom: 4rem;
