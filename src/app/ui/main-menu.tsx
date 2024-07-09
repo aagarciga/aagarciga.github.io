@@ -53,12 +53,12 @@ export default function MainMenu() {
         </li>
 
         <li>
-          <Link href={"/gestbook"}>
+          <Link href={"/guestbook"}>
             <ChatBubbleLeftEllipsisIcon width={24} height={24} />
-            <span>Gestbook</span>
+            <span>Guestbook</span>
 
           </Link>
-          <span className={styles.tooltip}>Gestbook</span>
+          <span className={styles.tooltip}>Guestbook</span>
         </li>
 
       </ul>
