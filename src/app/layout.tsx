@@ -7,11 +7,7 @@ export const metadata: Metadata = {
     template: "%s | Alex Alvarez Gárciga's Portfolio",
     default: "Alex Alvarez Gárciga's Portfolio",
   },
-  description: `I'm software engineer with more than 12 years of experience 
-                continuously honing my skills in crafting web applications, 
-                designing user-friendly interfaces, and studiying algorithms.
-                I'm passionate about leveraging technology to make a positive 
-                impact and share my expertise and creativity.`
+  description: `Software engineer fluent in JavaScript & C#, with more than a decade of exposure to front-end technologies, Microsoft ASP.Net solutions, and Microsoft Azure Cloud Services. In love with React.js, Typescript, HTML5, and CSS3. Skilled in UI/UX design, algorithms, and data structures. Enthusiastic about creating maintainable, user-friendly software through agile methodologies. Able to quickly learn and adopt new paradigms, programming languages, frameworks, and tools to meet project needs.`
 };
 
 export default function RootLayout({
